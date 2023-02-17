@@ -27,7 +27,7 @@ function constrain(x, a, b) {
 function hsv(h, s, v) {
 	let r, g, b, i, f, p, q, t;
 
-	i = Math.floor(h * 6);
+	i = Math.floor(h * 8);
 	f = h * 6 - i;
 	p = v * (1 - s);
 	q = v * (1 - f * s);
