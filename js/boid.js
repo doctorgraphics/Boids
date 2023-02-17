@@ -162,6 +162,7 @@ class Boid extends V2D {
 		this.shape.x = this.x;
 		this.shape.y = this.y;
 		this.shape.rotation = this.vel.angle();
+		this.shape.tint = 0xff0000; // set the color to red
 
 		if (opt.hues)
 			this.shape.tint = hsv(
