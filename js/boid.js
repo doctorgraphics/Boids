@@ -165,7 +165,7 @@ class Boid extends V2D {
 
 		if (opt.hues)
 			this.shape.tint = hsv(
-				constrain(this.vel.mag() / (opt.maxSpeed * 2), 160, 180), //constrain(this.vel.mag() / (opt.maxSpeed * 2), 0, 1),
+				constrain(this.vel.mag() / (opt.maxSpeed * 2), 0, 1),
 				1,
 				1
 			);
