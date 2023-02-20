@@ -162,11 +162,10 @@ class Boid extends V2D {
 		this.shape.x = this.x;
 		this.shape.y = this.y;
 		this.shape.rotation = this.vel.angle();
-		this.shape.tint = 0xff0000; // set the color to red
 
 		if (opt.hues)
 			this.shape.tint = hsv(
-				constrain(this.vel.mag() / (opt.maxSpeed * 2), 0, 1),
+				constrain(this.vel.mag() / (opt.maxSpeed * 2), 0, 1), //constrain(this.vel.mag() / (opt.maxSpeed * 2), 0, 10),
 				1,
 				1
 			);
